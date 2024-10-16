@@ -13,6 +13,9 @@ body {
   padding: 5em;
   font-weight: 700;
   font-family: "Mono";
+  display: flex;
+  flex-direction: column;
+  gap: 2em ;
 }
 
 main {
