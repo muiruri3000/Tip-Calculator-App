@@ -123,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         billInput.value = '';
        
         customAmountInput.value = '';
+        peopleValue.value = '1';
         customAmountInput.style.display = 'none';
     }
 });

@@ -12,13 +12,16 @@ body{
     background-color: rgba(167, 220, 241,0.4);
     padding:5em;
     font-weight: 700;
+    font-family: 'Mono';
 }
 
 main{
     margin: auto;
-    border: 1px solid;
+    border-radius: 2em;
     max-width: 20em;
     padding: 1.4em;
+    border: none;
+    background-color: #F3F9FA;
 }
 @font-face {
     font-family: 'Mono';
@@ -34,7 +37,7 @@ input{
     padding: .5em .7em;
     border-radius: .3em;
     border: none;
-    
+    background-color:white;
     text-align: right;
     
     }
@@ -81,6 +84,8 @@ button{
   }
   input{
       background-color: #9EBBBD;
+      font-size: 2em;
+      color: grey;
   }
   .tip--calculator{
     border: 1px solid;
@@ -98,6 +103,7 @@ button{
 
   .tip--calculator{
     padding-inline: 1em;
+    background-color: #00474B;
   }
   main .tip .tip--calc .tip--calc--numOfPeople input{
     background-image: url('../images/icon-person.svg');
@@ -130,6 +136,11 @@ button{
       border: 1px solid;
   }
 
+  #grandTotal, #totalPer, #tipPer{
+    color: #26C2AE;
+    font-size: 3em;
+  }
+
   
 @media (min-width:601px) {
     main{
@@ -159,10 +170,17 @@ button{
             
             .amount{
             
-                margin-bottom: 3em;
-                border: 1px solid red;
+                margin-bottom: 4.2em;
+        
             }
+            .flex .btn{
+                flex: 30%;
+                font-size: 1.6em;
 
+            }
+            .flex{
+            margin-bottom: 2.8em;
+            }
             .btn{
                 display: block;
                 text-align: center;
