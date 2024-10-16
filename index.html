@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<link rel="stylesheet" href="./styles/stylesheet.css">
+</head>
+<body>
+
+
+
+<main>
+  <div class="tip">
+    <div class="tip--calc">
+    <div class="tip--calc--display spacer">
+      <label for="calc--display">Bill</label>
+      <input type="number" id="bill" min="0" value="0">
+      </div>
+      <div class="tip--calc--tipSelect spacer">
+        <label for="calc--tipSelect">Select Tip %</label>
+        <div class="flex flexer">
+          <button class="btn tip" data-key="five">5%</button>
+          <button class="btn tip" data-key="ten">10%</button>
+          <button class="btn tip" data-key="fifteen">15%</button>
+          <button class="btn tip" data-key="twenty">20%</button>
+          <button class="btn tip" data-key="twentyfive">25%</button>
+          <button class="btn  custom" id="btnCustom" >Custom</button>
+        </div>
+    </div>
+    <div >
+      <input type="number" name="" style="display: none;" id="customAmount" placeholder="enter tip amount">
+    </div>
+    <div class=" spacer">
+      <label for="calc--numOfPeople">Number of People</label>
+      <input type="number" name="calc--numOfPeople" id="calc--numOfPeople" min="1" value="1">
+
+    </div>
+  </div>
+  <div class="tip--calculator spacer">
+      <div class="amount">
+      
+        <div class="flex-row">
+        <div class="flex-col">
+        <h1>Tip Amount</h1>
+         / person
+         </div>
+         <div id ='tipPer'>
+        $0.00
+         </div>
+    </div>
+      </div>
+      <div class="amount">
+      
+        <div class="flex-row">
+          <div class="flex-col">
+        <h1>Total</h1>
+         / person
+         </div>
+         <div id="totalPer">
+          $0.00
+         </div>
+    </div>
+      </div>
+      <div class="amount">
+        <div class="flex-row">
+          <div class="flex-col">
+        <h1>Grand Total</h1>
+                </div>
+         <div id="grandTotal">
+          $0.00
+         </div>
+    </div>
+      </div>
+      <div class="submit">
+        <button type="reset" id="reset"> reset</button>
+      </div>
+
+  </div>
+  </div>
+  </div>
+</main>
+
+  <!-- Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./js/tipCalc.js"></script>
+</body>
+</html>
