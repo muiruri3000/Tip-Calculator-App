@@ -100,6 +100,9 @@ input {
   border-radius: 0.5em;
   background-color: #547878;
 }
+.flex-col h1{
+    color:white;
+}
 
 .submit button {
   background-color: #26C2AE;
